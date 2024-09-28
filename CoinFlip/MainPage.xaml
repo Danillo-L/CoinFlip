@@ -7,14 +7,20 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
 
-            <Picker>
+            <Label
+                x:Name="ResultLabel"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Cara ou Coroa!"/>
+
+            <Image
+                x:Name="MoedaImage"
+             
+                HeightRequest="185"
+                Aspect="AspectFit"/>
+
+            <Picker x:Name="SelecaoPicker">
                 <Picker.Items>
                     <x:String>Cara</x:String>
                     <x:String>Coroa</x:String>
@@ -22,9 +28,9 @@
             </Picker>
 
             <Button
-                x:Name="FlipButton"
-                Text="Rodar"
-                Clicked="FlipButton_Clicked"/>
+                x:Name="JogarButton"
+                Text="Jogar"
+                Clicked="JogarButton_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>
 

@@ -8,7 +8,7 @@
     Title="CoinFlip">
 
     <ShellContent
-        Title="Home"
+        Title="CoinFlip"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
